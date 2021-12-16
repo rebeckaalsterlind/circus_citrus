@@ -1,9 +1,7 @@
 * {
-  min-height: 50px;
-  min-width: 50px;
-  max-width: 400px;
-  margin: 20px;
-  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
 }
 
 main {
@@ -28,14 +26,13 @@ main {
   border: 2px solid orange;
 }
 
-.newsletter {
+.landing, .newsletter, .signUp, .main-content, footer, .footer-item {
   display: flex;
   flex-direction: column;
 }
 
-.signUp {
-  display: flex;
-  flex-direction: column;
+.citrusCircus, .blob, .newsletter {
+  width: 100%;
 }
 
 .purple {
@@ -53,8 +50,6 @@ main {
 
 footer {
   border: 2px solid pink;
-  display: flex;
-  flex-direction: column;
 }
 
 

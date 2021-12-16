@@ -3,9 +3,14 @@
     flex-direction: row;
   }
 
+  .show-wrapper {
+    margin-top: 128px;
+  }
+
   .footer-item {
     order: 0;
   }
+  
   .circles {
     order: 1;
   }
