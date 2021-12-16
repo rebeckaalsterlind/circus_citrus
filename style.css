@@ -17,7 +17,7 @@ main {
 .blue {
   border: 2px solid blue;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
 
 .red {
@@ -28,8 +28,23 @@ main {
   border: 2px solid orange;
 }
 
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+}
+
 .purple {
   border: 2px solid purple;
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
 }
 
 .turquoise {
@@ -38,4 +53,10 @@ main {
 
 footer {
   border: 2px solid pink;
+  display: flex;
+  flex-direction: column;
 }
+
+
+
+

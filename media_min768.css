@@ -1,0 +1,13 @@
+@media only screen and (min-width: 768px) {
+  .signUp, .shows, footer {
+    flex-direction: row;
+  }
+
+  .footer-item {
+    order: 0;
+  }
+  .circles {
+    order: 1;
+  }
+
+}
