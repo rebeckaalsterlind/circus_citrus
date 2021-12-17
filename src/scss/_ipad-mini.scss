@@ -1,15 +1,16 @@
-.signUp, .shows, footer {
+
+.sign-up, .all-shows-wrapper, footer {
     flex-direction: row;
 }
 
-.show-wrapper {
-margin-top: 128px;
+.shows-wrapper2 {
+    margin-top: 128px;
 }
 
-.footer-item {
-order: 0;
+.footer-column-wrapper {
+    order: 0;
 }
 
-.circles {
-order: 1;
+.footer-icon {
+    order: 1;
 }
