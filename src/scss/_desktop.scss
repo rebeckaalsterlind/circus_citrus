@@ -1,0 +1,31 @@
+.bodycopy {
+    max-width: 80vw;
+    margin: 0 auto; //centrerar texten
+}
+
+.landing {
+    flex-flow: row wrap;
+    margin-left: 56px; 
+    justify-content: stretch;
+}
+
+.circusCitrus, .newsletter {
+width: 30%;/*width is temp and not accurate*/
+}
+
+.blob {
+width: 60%;/*width is temp and not accurate*/
+align-self: stretch; /*not right. not stretching as should*/
+}
+
+.newsletter {
+margin-left: 4px;
+}
+
+.main-content, .footer-item {
+flex-direction: row;
+}
+
+.show-wrapper {
+margin-top: 0;
+}
