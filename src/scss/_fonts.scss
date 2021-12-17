@@ -5,6 +5,7 @@ h1 {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 72px;
     line-height: 110px;
+    margin: 0;
 }
 
 h2 { //remove if not used
@@ -32,3 +33,12 @@ p {
     font-size: 20px;
     line-height: 32px;
 }
+
+input, button {
+    font-family: $font-family-rubikmono;
+}
+
+button {
+    font-size: 24px;
+}
+  
