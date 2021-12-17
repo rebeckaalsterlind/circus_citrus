@@ -1,3 +1,6 @@
+@import "_colors.scss"; // (usage) color: $color-citrus
+@import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
+
 main {
     border: 2px solid green;
     height: 100%;

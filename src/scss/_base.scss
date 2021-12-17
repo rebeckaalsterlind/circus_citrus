@@ -2,8 +2,7 @@
 @import "_main.scss";
 @import "_footer.scss";
 
-@import "_colors.scss"; // (usage) color: $color-citrus
-@import "_fonts.scss"; //(usage) @include h1, font-family: $font-family-rubik;
+@import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
 * {
   box-sizing: border-box;
@@ -16,27 +15,6 @@ body {
   color: $color-white;
   background-color: $color-black;
 }
-
-h1 {
-    @include h1;
-}
-
-h3 {
-    @include h3;
-}
-
-h4 {
-  @include h4;
-}
-
-h5 {
-  @include h5;
-}
-
-p {
-  @include p;
-}
-
 
 .blue {
   border: 2px solid blue;
