@@ -1,6 +1,5 @@
 @import "_colors.scss";
 
-// $debugging: true;
 $debugging: false;
 
 @mixin testBorder {
@@ -11,7 +10,6 @@ $debugging: false;
 
 footer {
    @include testBorder;
-    display: flex;
     margin-top: 1200px;
 }
 

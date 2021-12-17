@@ -43,9 +43,9 @@ $debugging: false;
 /************* footer ***********/
 footer {
     @include testBorder;
-    //  width: 249px;
-     height: 780px;
-     margin-top: 1200px;
+    display: flex;
+    height: 780px;
+    margin-top: 1200px;
  }
 
 .footer-column-wrapper {
