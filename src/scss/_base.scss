@@ -1,15 +1,8 @@
-@import "_nav.scss";
-:root {
-  --citra: #FBFF21;
-  --streetlight: #FFF065;
-  --kiwi: #CCD00E;
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
 
-  --black: #211B1B;
-  --menu-bg: #34352A;
-  --menu-text: #D02060;
-  --disabld-button-text:#A7A4A4;
-}
-
+@import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
 * {
   box-sizing: border-box;
@@ -18,83 +11,9 @@
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
-  color: white;
-  background-color: var(--black);
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Rubik Mono One', sans-serif;
-}
-
-h1 {
-  font-size: 72px;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-h5 {
-  font-size: 16px; /*is there even a h5 in the graphic profile??*/
-}
-
-p {
-  font-size: 20px;
-  line-height: 32px;
-}
-
-input, button {
-  font-family: 'Rubik Mono One', sans-serif;
-  height: 55px;
-  border: 3px solid var(--citra);
-}
-
-input {
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 0 20px 20px 20px;
-  width: 400px;
-}
-
-button {
-  font-size: 24px;
-  background-color: var(--citra);
-  color: var(--black);
-  border-radius: 20px 20px 0 20px;
-  width: 210px;
-}
-
-.rotate {
-  display: block;
-  transform: rotate(-1deg);
-}
-
-.link {
-  text-decoration: none;
-  color: var(--citra);
-  font-size: bold;
-
-}
-
-header {
-  width: 100%;
-}
-
-main {
-  border: 2px solid green;
-  height: 100%;
-  width: 100vw;
-  display: flex;
-  flex-flow: column wrap;
+    font-family: $font-family-rubik;
+  color: $color-white;
+  background-color: $color-black;
 }
 
 .blue {
@@ -109,22 +28,6 @@ main {
   border: 2px solid orange;
 }
 
-.viewport1, 
-.newsletter, 
-.sign-up, 
-.viewport2, 
-.all-shows-wrapper, 
-footer, 
-.footer-column-wrapper,
-.footer-item-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.citrusCircus, .blob, .newsletter {
-  width: 100%;
-}
-
 .purple {
   border: 2px solid purple;
 }
@@ -132,15 +35,3 @@ footer,
 .turquoise {
   border: 2px solid turquoise;
 }
-
-footer {
-  border: 2px solid pink;
-}
-
-.footer-column {
-  width: 203px;
-  height: 134px;
-  border-top: 10px solid var(--citra);
-}
-
-
