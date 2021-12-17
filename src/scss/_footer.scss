@@ -1,18 +1,35 @@
-@import "_colors.scss"; // (usage) color: $color-citrus
+@import "_colors.scss";
 
-footer, 
-.footer-column-wrapper,
-.footer-item-wrapper {
-  display: flex;
-  flex-direction: column;
+// $debugging: true;
+$debugging: false;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
 }
 
 footer {
-    border: 2px solid pink;
+   @include testBorder;
+    width: 249px;
+    height: 1027px;
+    margin-top: 4182px;
+}
+
+.footer-icon {
+  width: 160px;
+  height: 160px;
+  margin-left: 109px;
+  border: 1px solid $color-citrus;
+}
+
+.footer-column-wrapper {
+  margin-left: 25px;
 }
 
 .footer-column {
     width: 203px;
-    height: 134px;
+    height: 139px;
     border-top: 10px solid $color-citrus;
+    margin-top: 112px;
 }
