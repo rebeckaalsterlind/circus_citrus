@@ -149,7 +149,13 @@
     </section>
   </main>
   <footer>
-    <div class="orange footer-icon">Snurra</div>
+    <div class="footer-icon"></div>
+    <!-- <svg id="footer-icon" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="80" cy="80" r="75" stroke="#FBFF21" stroke-width="10"/>
+      <circle cx="80" cy="80" r="45" stroke="#FBFF21" stroke-width="10"/>
+      <circle cx="77" cy="85" r="15" stroke="#FBFF21" stroke-width="10"/>
+      </svg> -->
+      
     <section class="red footer-column-wrapper" >
       <article class="purple footer-column">
         <h5>The Now</h5> <!-- maybe this shouldnt be a h5?  16px or 18? -->
@@ -178,4 +184,12 @@
 //     x: 200,
 //     duration: 2
 });
+
+gsap.to('#footer-icon', {
+  x: 109,
+// rotation: 360,
+//     duration: 2
+});
+
+
 </script>
