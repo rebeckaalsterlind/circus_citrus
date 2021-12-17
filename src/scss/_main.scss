@@ -1,6 +1,13 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
+$debugging: false;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
+}
 
 /************* viewport 1 ***********/
 .viewport1 {
@@ -29,10 +36,58 @@ input {
   font-size: 14px;
   background-color: transparent;
   border-radius: 0 20px 20px 20px;
-  width: 335px;
+  width: 327px;
 }
 
 /************* viewport 2 ***********/
+.viewport2 {
+  @include testBorder;
+  height: 2299px;
+  width: 335px;
+  margin-left: 20px;
+}
+
+.h2-wrapper {
+  width: 390px;
+  word-wrap: break-word;
+  margin-bottom: 28px;
+}
+
+.shows-text1 {
+  margin-bottom: 40px;
+}
+
+.shows-text2 {
+  margin-bottom: 60px;
+}
+
+.show-card-img {
+  width: 335px;
+  height: 330px;
+  background-image: url("../../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg");
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.show-card-text {
+  background-color: $color-kiwi;
+  width: 335px;
+  height: 85px;
+  border-radius: 20px 20px 0px 20px;
+  text-align: center;
+  
+  h3 {
+    color: $color-black;
+    padding-top: 12px;
+  }
+}
+
+
+
+
 
 main {
     height: 100%;
@@ -68,11 +123,11 @@ button {
   font-size: bold;
 }
 
-.viewport1, 
-.newsletter, 
-.sign-up, 
-.viewport2, 
-.all-shows-wrapper {
-  display: flex;
-  flex-direction: column;
-}
+// .viewport1, 
+// .newsletter, 
+// .sign-up, 
+// .viewport2, 
+// .all-shows-wrapper {
+//   display: flex;
+//   flex-direction: column;
+// }
