@@ -1,0 +1,19 @@
+@import "_colors.scss"; // (usage) color: $color-citrus
+@import "_fonts.scss"; //(usage) @include h1
+
+footer, 
+.footer-column-wrapper,
+.footer-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+    border: 2px solid pink;
+}
+
+.footer-column {
+    width: 203px;
+    height: 134px;
+    border-top: 10px solid $color-citrus;
+}

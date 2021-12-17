@@ -1,0 +1,33 @@
+$font-family-rubik: 'Rubik', sans-serif;
+$font-family-rubikmono: 'Rubik Mono One', sans-serif;
+
+@mixin h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 72px;
+    line-height: 110px;
+}
+
+@mixin h2 { //remove if not used
+    font-family: $font-family-rubikmono;
+    font-size: 40px;
+}
+
+@mixin h3 {
+    font-family: $font-family-rubikmono;
+    font-size: 24px;
+}
+
+@mixin h4 {
+    font-family: $font-family-rubikmono;
+    font-size: 18px;
+}
+
+@mixin h5 { //remove if not used
+    font-family: $font-family-rubikmono;
+    font-size: 16px;
+}
+
+@mixin p {
+    font-size: 20px;
+    line-height: 32px;
+}

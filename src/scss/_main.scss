@@ -1,0 +1,52 @@
+main {
+    border: 2px solid green;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.citrusCircus, .blob, .newsletter {
+    width: 100%;
+}
+  
+input, button {
+    font-family: $font-family-rubikmono;
+  height: 55px;
+  border: 3px solid $color-citrus;
+}
+
+input {
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 0 20px 20px 20px;
+  width: 400px;
+}
+
+button {
+  font-size: 24px;
+  background-color: $color-citrus;;
+  color: $color-black;
+  border-radius: 20px 20px 0 20px;
+  width: 210px;
+}
+
+.rotate {
+  display: block;
+  transform: rotate(-1deg);
+}
+
+.link {
+  text-decoration: none;
+  color: $color-citrus;
+  font-size: bold;
+}
+
+.viewport1, 
+.newsletter, 
+.sign-up, 
+.viewport2, 
+.all-shows-wrapper {
+  display: flex;
+  flex-direction: column;
+}
