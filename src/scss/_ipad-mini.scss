@@ -1,11 +1,44 @@
+$debugging: false;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
+}
 
 .sign-up, .all-shows-wrapper, footer {
     flex-direction: row;
 }
 
+/************* viewport 2 ***********/
+.viewport2 {
+    @include testBorder;
+    height: 900px;
+    width: 511px;
+    margin-left: 40px;
+  }
+
+.h2-wrapper {
+    @include testBorder;
+    width: 538px;
+
+    .hyphons {
+        display: none;
+    }
+}
+
+.shows-text2 {
+    margin-bottom: 20px;
+}
+
+.all-shows-wrapper {
+    display: flex;
+}
+
 .shows-wrapper2 {
     margin-top: 128px;
 }
+/************* end of viewport 2 ***********/
 
 .footer-column-wrapper {
     order: 0;
