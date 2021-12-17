@@ -40,10 +40,21 @@ $debugging: false;
 }
 /************* end of viewport 2 ***********/
 
+/************* footer ***********/
+footer {
+    @include testBorder;
+    //  width: 249px;
+     height: 780px;
+     margin-top: 1200px;
+ }
+
 .footer-column-wrapper {
     order: 0;
 }
 
 .footer-icon {
     order: 1;
+    margin-top: 320px;
+    margin-left: 260px;
 }
+/************* end of footer ***********/

@@ -11,8 +11,7 @@ $debugging: false;
 
 footer {
    @include testBorder;
-    width: 249px;
-    height: 1027px;
+    display: flex;
     margin-top: 1200px;
 }
 
