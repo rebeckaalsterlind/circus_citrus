@@ -1,31 +1,26 @@
-.bodycopy {
-    max-width: 80vw;
-    margin: 0 auto; //centrerar texten
-}
-
-.landing {
+.viewport1 {
     flex-flow: row wrap;
     margin-left: 56px; 
-    justify-content: stretch;
+    justify-content: stretch; /*or flex-end? */
 }
 
-.circusCitrus, .newsletter {
-width: 30%;/*width is temp and not accurate*/
+.intro-text, .newsletter {
+    width: 30%;/*width is temp and not accurate*/
 }
 
 .blob {
-width: 60%;/*width is temp and not accurate*/
-align-self: stretch; /*not right. not stretching as should*/
+    width: 60%;/*width is temp and not accurate*/
+    align-self: stretch; /*not right. not stretching as should*/
 }
 
 .newsletter {
-margin-left: 4px;
+    margin-left: 4px;
 }
 
-.main-content, .footer-item {
-flex-direction: row;
+.viewport2, .footer-column-wrapper {
+    flex-direction: row;
 }
 
-.show-wrapper {
-margin-top: 0;
+.shows-wrapper2{
+    margin-top: 0;
 }
