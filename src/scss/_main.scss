@@ -26,12 +26,14 @@
 input {
   margin-bottom: 40px;
   padding: 13px 16.75px;
-  font-size: 14px;
   background-color: transparent;
   border-radius: 0 20px 20px 20px;
   width: 335px;
 }
 
+input::placeholder {
+  color: white;
+}
 /************* viewport 2 ***********/
 
 main {
@@ -51,7 +53,7 @@ input, button {
 }
 
 button {
-  background-color: $color-citrus;;
+  background-color: $color-citrus;
   color: $color-black;
   border-radius: 20px 20px 0 20px;
   width: 210px;
