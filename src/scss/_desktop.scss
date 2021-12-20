@@ -1,6 +1,16 @@
+
+$debugging: true;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
+}
+
 body {
     margin: 67px 60px 37px 60px;
 }
+
 
 /************* header ***********/
 aside {
@@ -8,6 +18,7 @@ aside {
 }
 
 /************* viewport 1 ***********/
+
 .viewport1 {
     display: flex;
     flex-flow: column wrap;
@@ -38,10 +49,79 @@ aside {
 
 
 /************* viewport 2 ***********/
-.viewport2, .footer-column-wrapper {
-    flex-direction: row;
+.viewport2 {
+    @include testBorder;
+    display: flex;
+    height: 864px;
+    width: 1320px;
+    // margin: 80px 57px 80px 60px;
+}
+
+.all-shows-wrapper {
+    margin-left: 132px;
 }
 
 .shows-wrapper2 {
+    margin-left: 20px;
+}
+
+.shows-wrapper1, .shows-wrapper2 {
     margin-top: 0;
 }
+
+.show-card-img, .show-card-text {
+    width: 315px;  
+}
+
+.show-card-img {
+    height: 311px;
+}
+
+.show-card1, .show-card2, .show-card3, .show-card4 {
+    @include testBorder;
+    height: 422px;
+    margin-bottom: 20px;
+}
+
+.show-card-img1, .show-card-img3 {
+    margin-top: 0;
+} //do we still have these classes? and should they have margin-tops? unsure if something happened in conflict res.  double check! 
+
+.show-card-img2, .show-card-img4 {
+    margin-top: 20px;
+}
+
+.show-card-text {
+    height: 80px;
+}
+/************* end of viewport 2 ***********/
+
+/************* footer ***********/
+footer {
+    @include testBorder;
+    margin-top: 73px;
+    height: 300px;
+}
+
+.footer-column-wrapper {
+    @include testBorder;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 873px;
+    height: 134px;
+    margin-left: 0;
+}
+
+.footer-column {
+    margin-top: 0;
+}
+
+h5 {
+    margin-top: 22px;
+}
+
+.footer-icon {
+    margin: 103px 60px 37px 287px;
+}
+/************* end of footer ***********/
