@@ -1,6 +1,6 @@
 @import "_colors.scss";
 
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
@@ -14,10 +14,10 @@ footer {
 }
 
 .footer-icon {
+  @include testBorder;
   width: 160px;
   height: 160px;
   margin-left: 109px;
-  border: 1px solid $color-citrus;
 }
 
 .footer-column {

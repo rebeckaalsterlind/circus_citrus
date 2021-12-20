@@ -1,8 +1,8 @@
 @import "_normalize";
 
-@import "_base.scss"; //mobile version
+@import "_base.scss"; //mobile version width 375px
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
     @import "_ipad-mini.scss";
 }
 
