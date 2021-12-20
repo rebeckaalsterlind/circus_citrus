@@ -1,0 +1,55 @@
+// this section is missing right position on menu-link from the top
+// .sidenav-text is not finished etc. 
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #34352A;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav li {
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.sidenav > ul, .sidenav > button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.sidenav > button {
+  bottom: 95px;
+  color: $color-citrus;
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  border: 1px solid white;
+  height: 409px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidenav > aside { //rounded edges on line??
+  border-bottom: 5px solid $color-menu-text;
+  width: 130px;
+}
+
+.sidenav-text {
+  color: $color-menu-text;
+  text-transform: uppercase;
+  transform: rotate(1.44deg);
+}

@@ -39,7 +39,7 @@ p {
     line-height: 32px;
 }
 
-input, button {
+input, button, .menu-link, .sidenav-text {
     font-family: $font-family-rubikmono;
 }
 
@@ -49,4 +49,16 @@ button {
   
 input {
     font-size: 14px;
+}
+
+.menu-link {
+    font-size: 48px;
+}
+
+.sidenav button {
+    font-size: 48px;
+}
+
+.sidenav-text {
+    font-size: 18px;
 }
