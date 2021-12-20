@@ -1,12 +1,16 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
     outline: 2px solid white;
   }
+}
+
+header, .viewport1, .viewport2, footer {
+  margin-left: 20px
 }
 
 main {
@@ -120,3 +124,17 @@ font-size: bold;
     padding-top: 12px;
   }
 }
+
+/************* cookies ***********/
+#cookies-bar {
+  background-color: $color-disable-button-text;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 28px 32px 20px;
+
+  p {
+    margin-bottom: 16px;
+  }
+}
+/************* end of cookies ***********/
