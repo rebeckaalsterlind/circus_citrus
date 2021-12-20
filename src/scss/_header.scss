@@ -9,11 +9,18 @@ $debugging: true;
 }
 
 header {
-    width: 100%;
-    border: 1px solid white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  // @include testBorder;
+  height: 176px;
+
+  h1 {
+  // @include testBorder;
+    margin-top: 40px;
+  }
+
+    // width: 100%;
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
 }
 
 header > aside {
