@@ -36,6 +36,7 @@ body {
     display: flex;
     height: 864px;
     width: 1320px;
+    // margin: 80px 57px 80px 60px;
 }
 
 .all-shows-wrapper {
@@ -43,7 +44,7 @@ body {
 }
 
 .shows-wrapper2 {
-    margin-left: 24px;
+    margin-left: 20px;
 }
 
 .shows-wrapper1, .shows-wrapper2 {
@@ -54,16 +55,31 @@ body {
     width: 315px;  
 }
 
+.show-card-img {
+    height: 311px;
+}
+
 .show-card1, .show-card2, .show-card3, .show-card4 {
     @include testBorder;
     height: 422px;
+    margin-bottom: 20px;
 }
 
 .show-card-img1, .show-card-img3 {
     margin-top: 0;
 } 
 
+.show-card-img2, .show-card-img4 {
+    margin-top: 20px;
+}
+
 .show-card-text {
     height: 80px;
 }
 /************* end of viewport 2 ***********/
+
+/************* footer ***********/
+footer {
+    margin-top: 80px;
+}
+/************* end of footer ***********/
