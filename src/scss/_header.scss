@@ -1,5 +1,13 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 
+$debugging: true;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
+}
+
 header {
     width: 100%;
     border: 1px solid white;
@@ -9,9 +17,13 @@ header {
 }
 
 header > aside {
-//  display: none;
+ display: none;
   width: 109px;
   height: 112px;
-  border: 1px solid white;
+  // border: 1px solid red;
   font-size: 100px;
+}
+
+#menu-icon {
+  @include testBorder;
 }

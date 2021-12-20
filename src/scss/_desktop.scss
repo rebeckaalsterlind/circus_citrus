@@ -11,9 +11,13 @@ header, .viewport1, .viewport2, footer {
 }
 
 /************* header ***********/
-aside {
+header > aside {
     display: block;
 }
+
+#menu-icon {
+    @include testBorder;
+  }
 /************* end of header ***********/
 
 /************* viewport 1 ***********/
