@@ -9,25 +9,17 @@ $debugging: true;
 }
 
 header {
-  // @include testBorder;
   height: 176px;
-
+  
   h1 {
-  // @include testBorder;
     margin-top: 40px;
   }
-
-    // width: 100%;
-    // display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: space-between;
 }
 
 header > aside {
  display: none;
   width: 109px;
   height: 112px;
-  // border: 1px solid red;
   font-size: 100px;
 }
 

@@ -35,6 +35,12 @@ main {
   width: 100%;
 }
 
+.blob {
+  @include testBorder;
+  width: 455px;
+  height: 458px;
+}
+
 .newsletter {
   margin-top: 84px;
 }
