@@ -6,4 +6,12 @@
 // //     duration: 2
 // });
 
-console.log("kontakt");
+
+document.getElementById("menu").addEventListener('click', () => {
+  document.getElementById("sidenav").style.width = "1008px";
+});
+
+
+document.getElementById("close").addEventListener("click", () => {
+  document.getElementById("sidenav").style.width = "0";
+})

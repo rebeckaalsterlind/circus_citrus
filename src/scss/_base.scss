@@ -3,7 +3,7 @@
 @import "_footer.scss";
 
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
-
+@import "_menu.scss";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,17 +16,4 @@ body {
   background-color: $color-black;
   margin-top: 41px;
   margin-left: 20px;
-}
-
-.blue {
-  border: 2px solid blue;
-}
-
-
-.turquoise {
-  border: 2px solid turquoise;
-}
-
-.purple {
-  border: 2px solid purple;
 }

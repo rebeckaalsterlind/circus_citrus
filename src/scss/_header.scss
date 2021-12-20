@@ -2,6 +2,16 @@
 
 header {
     width: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-//menu
+header > aside {
+//  display: none;
+  width: 109px;
+  height: 112px;
+  border: 1px solid white;
+  font-size: 100px;
+}
