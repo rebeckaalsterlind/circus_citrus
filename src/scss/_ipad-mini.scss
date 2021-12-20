@@ -6,16 +6,44 @@ $debugging: false;
   }
 }
 
-.sign-up, .all-shows-wrapper, footer {
+body {
+    margin: 66px 24px 51px 40px;
+}
+
+/************ viewport 1 ************/
+
+.viewport1 {
+    margin-bottom: 221px;
+}
+
+.intro-text {
+    margin-top: 64px;
+    margin-right: 221px;
+}
+
+/* .blob/svg-img is not positioned right. 
+prob just not gotten there yet but to keep in mind, 
+this sections positioning need a little attention later on*/
+.blob { 
+    margin-right: 22.9px;
+}
+
+.sign-up {
     flex-direction: row;
 }
 
+input {
+    width: 400px;
+    margin-right: 19px;
+}
+
+//margin error in viewport2
 /************* viewport 2 ***********/
 .viewport2 {
     @include testBorder;
     height: 900px;
     width: 511px;
-    margin-left: 40px;
+    margin-left: 0;
   }
 
 .h2-wrapper {
@@ -47,6 +75,7 @@ footer {
     height: 780px;
     margin-top: 1200px;
  }
+
 
 .footer-column-wrapper {
     order: 0;
