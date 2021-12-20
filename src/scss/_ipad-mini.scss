@@ -1,9 +1,14 @@
-body {
-    margin-top: 66px;
-    margin-left: 32px;
-    margin-right: 40px;
+$debugging: false;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
 }
 
+body {
+    margin: 66px 24px 51px 40px;
+}
 
 /************ viewport 1 ************/
 
@@ -32,26 +37,13 @@ input {
     margin-right: 19px;
 }
 
-/************ viewport 2 ************/
-
-.shows-text{
-    margin-right: 217px;
-}
-
-.shows-wrapper1, .shows-wrapper2 {
-    width: 50%;
-}
-
-.all-shows-wrapper {
-    flex-direction: row;
-}
-
+//margin error in viewport2
 /************* viewport 2 ***********/
 .viewport2 {
     @include testBorder;
     height: 900px;
     width: 511px;
-    margin-left: 40px;
+    margin-left: 0;
   }
 
 .h2-wrapper {
@@ -84,11 +76,6 @@ footer {
     margin-top: 1200px;
  }
 
-/************ footer ************/
-
-footer {
-    flex-direction: row;
-}
 
 .footer-column-wrapper {
     order: 0;

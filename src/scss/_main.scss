@@ -25,6 +25,10 @@ main {
   margin: 28px 49px 28px 0;
 }
 
+.citrusCircus, .blob, .newsletter {
+  width: 100%;
+}
+
 .newsletter {
   margin-top: 85px;
 }
@@ -37,6 +41,11 @@ main {
   margin-top: 25px;
 }
 
+input, button {
+  height: 55px;
+  border: 3px solid $color-citrus;
+}
+
 input {
   margin-bottom: 40px;
   padding: 13px 16.75px;
@@ -47,23 +56,6 @@ input {
 
 input::placeholder {
   color: white;
-}
-/************* viewport 2 ***********/
-
-main {
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.citrusCircus, .blob, .newsletter {
-  width: 100%;
-}
-
-input, button {
-height: 55px;
-border: 3px solid $color-citrus;
 }
 
 button {
@@ -129,12 +121,3 @@ font-size: bold;
     padding-top: 12px;
   }
 }
-
-// .viewport1, 
-// .newsletter, 
-// .sign-up, 
-// .viewport2, 
-// .all-shows-wrapper {
-//   display: flex;
-//   flex-direction: column;
-// }
