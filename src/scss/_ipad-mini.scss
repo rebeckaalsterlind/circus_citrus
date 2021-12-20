@@ -1,4 +1,4 @@
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
@@ -6,12 +6,11 @@ $debugging: false;
   }
 }
 
-body {
+header, .viewport1, .viewport2, footer {
     margin: 66px 24px 51px 40px;
 }
 
 /************ viewport 1 ************/
-
 .viewport1 {
     margin-bottom: 221px;
 }
@@ -36,7 +35,7 @@ input {
     width: 400px;
     margin-right: 19px;
 }
-
+/************ end of viewport 1 ************/
 
 /************* viewport 2 ***********/
 .viewport2 {
@@ -66,6 +65,12 @@ input {
     margin-top: 128px;
 }
 /************* end of viewport 2 ***********/
+
+/************* cookies ***********/
+.cookies-text {
+    max-width: 873px;
+}    
+/************* end of cookies ***********/
 
 /************* footer ***********/
 footer {

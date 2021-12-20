@@ -1,5 +1,4 @@
-
-$debugging: true;
+$debugging: false;
 
 @mixin testBorder {
   @if $debugging {
@@ -7,18 +6,17 @@ $debugging: true;
   }
 }
 
-body {
+header, .viewport1, .viewport2, footer {
     margin: 67px 60px 37px 60px;
 }
-
 
 /************* header ***********/
 aside {
     display: block;
 }
+/************* end of header ***********/
 
 /************* viewport 1 ***********/
-
 .viewport1 {
     display: flex;
     flex-flow: column wrap;
@@ -46,7 +44,7 @@ aside {
     margin: 0;
     width: 649px;
 }
-
+/************* end of viewport 1 ***********/
 
 /************* viewport 2 ***********/
 .viewport2 {
@@ -54,7 +52,6 @@ aside {
     display: flex;
     height: 864px;
     width: 1320px;
-    // margin: 80px 57px 80px 60px;
 }
 
 .all-shows-wrapper {
@@ -85,7 +82,7 @@ aside {
 
 .show-card-img1, .show-card-img3 {
     margin-top: 0;
-} //do we still have these classes? and should they have margin-tops? unsure if something happened in conflict res.  double check! 
+} 
 
 .show-card-img2, .show-card-img4 {
     margin-top: 20px;
@@ -95,6 +92,28 @@ aside {
     height: 80px;
 }
 /************* end of viewport 2 ***********/
+
+/************* cookies ***********/
+#cookies-bar {
+    @include testBorder;
+    height: 100px;
+    display: flex;
+    padding-top: 0;
+  
+    p {
+    @include testBorder;
+    margin-top: 28px;
+    height: 45px;
+    width: 873px;
+    }
+
+    #btn-accept-cookies {
+        @include testBorder;
+        margin-left: 237px;
+        margin-top: 20px;
+    }
+  }
+/************* end of cookies ***********/
 
 /************* footer ***********/
 footer {

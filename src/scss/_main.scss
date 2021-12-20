@@ -79,6 +79,7 @@ text-decoration: none;
 color: $color-citrus;
 font-size: bold;
 }
+/************* end of viewport 1 ***********/
 
 /************* viewport 2 ***********/
 .viewport2 {
@@ -124,16 +125,17 @@ font-size: bold;
     padding-top: 12px;
   }
 }
+/************* end of viewport 2 ***********/
 
 /************* cookies ***********/
 #cookies-bar {
   background-color: $color-disable-button-text;
   position: fixed;
-  bottom: 0;
   width: 100%;
   padding: 16px 28px 32px 20px;
+    bottom: 0;
 
-  p {
+  .cookies-text {
     margin-bottom: 16px;
   }
 }
