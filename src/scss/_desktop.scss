@@ -80,6 +80,34 @@ body {
 
 /************* footer ***********/
 footer {
-    margin-top: 80px;
+    @include testBorder;
+    margin-top: 73px;
+    height: 300px;
+}
+
+.footer-column-wrapper {
+    @include testBorder;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 873px;
+    height: 134px;
+}
+
+.footer-column-wrapper {
+    margin-left: 0;
+
+}
+
+.footer-column {
+    margin-top: 0;
+}
+
+h5 {
+    margin-top: 22px;
+}
+
+.footer-icon {
+    margin: 103px 60px 37px 287px;
 }
 /************* end of footer ***********/
