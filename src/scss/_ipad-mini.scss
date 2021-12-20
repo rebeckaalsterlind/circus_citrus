@@ -7,33 +7,48 @@ $debugging: true;
 }
 
 header, .viewport1, .viewport2, footer {
-    margin: 66px 24px 51px 40px;
+    margin: 64px 24px 52px 40px;
 }
 
 /************ viewport 1 ************/
 .viewport1 {
-    margin-bottom: 221px;
+    @include testBorder;
+    margin-bottom: 208px;
 }
 
 .intro-text {
-    margin-top: 64px;
-    margin-right: 221px;
-    max-width: 720px;;
+    margin-top: 56px;
+    margin-right: 220px;
+    max-width: 720px;
+
+    p {
+        width: 508px;
+    }
 }
 
 .blob { 
-    margin-right: 22.9px;
-    border: 1px solid white; //kept border on svg wrapper to show how how svg will display after fixing svg size and pos. 
-    max-width: 720px;;
+    @include testBorder;
+    margin-right: 28px;
+
+    .blob-svg {
+        width: 720px;
+        height: 724px;
+    }
+}
+
+.newsletter {
+    margin-top: 128px;
 }
 
 .sign-up {
-    flex-direction: row;
+    margin-top: 60px;
+    // flex-direction: row;
 }
 
 input {
     width: 400px;
-    margin-right: 19px;
+    margin-right: 20px;
+    margin-bottom: 0;
 }
 /************ end of viewport 1 ************/
 
@@ -41,12 +56,13 @@ input {
 .viewport2 {
     @include testBorder;
     height: 900px;
-    width: 511px;
-  }
+    width: 512px;
+    margin-top: 208px;
+}
 
 .h2-wrapper {
     @include testBorder;
-    width: 538px;
+    width: 536px;
 
     .hyphons {
         display: none;
@@ -68,7 +84,7 @@ input {
 
 /************* cookies ***********/
 .cookies-text {
-    max-width: 873px;
+    max-width: 876px;
 }    
 /************* end of cookies ***********/
 
