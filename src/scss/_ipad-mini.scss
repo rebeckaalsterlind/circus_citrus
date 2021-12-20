@@ -43,7 +43,6 @@ input {
     @include testBorder;
     height: 900px;
     width: 511px;
-    margin-left: 0;
   }
 
 .h2-wrapper {
@@ -74,7 +73,7 @@ footer {
     display: flex;
     height: 780px;
     margin-top: 1200px;
- }
+}
 
 
 .footer-column-wrapper {
@@ -85,5 +84,6 @@ footer {
     order: 1;
     margin-top: 320px;
     margin-left: 260px;
+
 }
 /************* end of footer ***********/
