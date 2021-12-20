@@ -1,3 +1,16 @@
+$debugging: false;
+
+@mixin testBorder {
+  @if $debugging {
+    outline: 2px solid white;
+  }
+}
+
+body {
+    margin: 67px 60px 37px 60px;
+}
+
+
 .viewport1 {
     flex-flow: row wrap;
     margin-left: 56px; 
@@ -17,10 +30,36 @@
     margin-left: 4px;
 }
 
-.viewport2, .footer-column-wrapper {
-    flex-direction: row;
+/************* viewport 2 ***********/
+.viewport2 {
+    @include testBorder;
+    display: flex;
+    // height: 754px;
+    // width: 538px;
+ 
+
+//     position: absolute;
+//     margin-top: 1104px;
 }
 
-.shows-wrapper2{
+.shows-text-wrapper {
+    @include testBorder;
+}
+
+.all-shows-wrapper {
+    margin-left: 132px;
+}
+
+.shows-wrapper2 {
+    margin-left: 24px;
+}
+
+.shows-wrapper1, .shows-wrapper2 {
     margin-top: 0;
 }
+
+.show-card-img {
+    margin-top: 0;
+}
+
+/************* end of viewport 2 ***********/
