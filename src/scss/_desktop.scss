@@ -1,4 +1,4 @@
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
@@ -34,16 +34,8 @@ body {
 .viewport2 {
     @include testBorder;
     display: flex;
-    // height: 754px;
-    // width: 538px;
- 
-
-//     position: absolute;
-//     margin-top: 1104px;
-}
-
-.shows-text-wrapper {
-    @include testBorder;
+    height: 864px;
+    width: 1320px;
 }
 
 .all-shows-wrapper {
@@ -58,8 +50,20 @@ body {
     margin-top: 0;
 }
 
-.show-card-img {
-    margin-top: 0;
+.show-card-img, .show-card-text {
+    width: 315px;  
 }
 
+.show-card1, .show-card2, .show-card3, .show-card4 {
+    @include testBorder;
+    height: 422px;
+}
+
+.show-card-img1, .show-card-img3 {
+    margin-top: 0;
+} 
+
+.show-card-text {
+    height: 80px;
+}
 /************* end of viewport 2 ***********/
