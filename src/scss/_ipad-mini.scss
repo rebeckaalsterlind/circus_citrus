@@ -19,13 +19,13 @@ body {
 .intro-text {
     margin-top: 64px;
     margin-right: 221px;
+    max-width: 720px;;
 }
 
-/* .blob/svg-img is not positioned right. 
-prob just not gotten there yet but to keep in mind, 
-this sections positioning need a little attention later on*/
 .blob { 
     margin-right: 22.9px;
+    border: 1px solid white; //kept border on svg wrapper to show how how svg will display after fixing svg size and pos. 
+    max-width: 720px;;
 }
 
 .sign-up {
@@ -37,7 +37,7 @@ input {
     margin-right: 19px;
 }
 
-//margin error in viewport2
+
 /************* viewport 2 ***********/
 .viewport2 {
     @include testBorder;
