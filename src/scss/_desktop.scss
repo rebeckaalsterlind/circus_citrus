@@ -49,7 +49,7 @@ main {
   @include testBorder;
 }
 
-.blob {
+.blob-wrapper {
     @include testBorder;
     width: 50%;
     height: 100%;

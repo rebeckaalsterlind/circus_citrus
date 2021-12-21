@@ -50,8 +50,14 @@
       </p>
 
       <!-- BLOB should prob have an flex-end on media min 1200 but doesnt really work yet. need fixing -->
-      <div class="blob">
-        <svg class="blob-svg" width="706" height="733" viewBox="0 0 706 733" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- ============= blob for mobile ==================== -->
+      <div class="blob-wrapper">
+        <svg class="blob-svg mobile" width="100%" height="458" viewBox="0 0 160 725" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg class="blob-svg mobile" width="455" height="458" viewBox="0 0 340 458" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+        <!-- <svg class="blob-svg mobile" width="455" height="458" viewBox="0 0 260 410" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+
+
           <g filter="url(#filter0_d_2_78)">
       
           <!-- blob-large -->
@@ -76,7 +82,39 @@
           </filter>
           </defs>
       </svg>
-      
+      <!-- ============= end of blob for mobile ============= -->
+
+      <!-- ============= blob for tablet/desktop ============ -->
+      <svg class="blob-svg tablet-desktop" width="706" height="733" viewBox="0 0 706 733" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- <svg class="blob-svg tablet-desktop" width="100%" height="733" viewBox="0 0 706 733" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+
+  
+            <g filter="url(#filter0_d_2_78)">
+        
+            <!-- blob-large -->
+            <path id="blob-large" d="M677 500.68C677 724.68 576.711 724.68 453 724.68C329.288 724.68 229 624.392 229 500.68C229 376.968 329.288 276.68 453 276.68C722.5 276.68 677 376.968 677 500.68Z" fill="#FBFF21"/>
+            </g>
+            
+            <!-- blob-medium -->
+            <path id="blob-medium" d="M484.648 424.456C370.681 617.296 284.343 566.271 177.84 503.328C71.3376 440.386 36.025 303.023 98.9676 196.52C172 86.6802 360 57.1801 405.775 117.648C515.947 263.18 547.591 317.953 484.648 424.456Z" fill="#CCD00E"/>
+        
+            <!-- blob-small -->
+            <path id="blob-small" d="M486.683 384.172C345.748 346.777 362.49 283.678 383.143 205.841C403.796 128.005 483.638 81.6485 561.474 102.302C643.182 128.688 694.828 241.284 665.014 280.633C593.258 375.336 564.519 404.825 486.683 384.172Z" fill="#FFF065"/>
+            <defs>
+            <filter id="filter0_d_2_78" x="225" y="276.68" width="458.899" height="456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_78"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_78" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+
+      <!-- ============= end of  blob for tablet/desktop ==== -->
       </div>
       <article class="newsletter">
         <p class="newsletter-text">Curious? Receive news on when and where we’re around!</p>
