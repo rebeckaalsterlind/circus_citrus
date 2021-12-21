@@ -8,16 +8,12 @@ $debugging: true;
   }
 }
 
-header {
-  height: 176px;
-  
-  h1 {
-    margin-top: 40px;
-  }
-}
+// header {
+//   height: 176px;
+// }
 
 header > aside {
- display: none;
+  display: none;
   width: 109px;
   height: 112px;
   font-size: 100px;

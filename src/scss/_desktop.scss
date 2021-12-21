@@ -6,24 +6,16 @@ $debugging: true;
   }
 }
 
-//note: adjust header margins when we get the right numbers from Jenni
-header, .viewport1, .viewport2, footer {
-    margin: 67px 60px 37px 60px;
-}
-header {
-    margin: 67px 60px 0px 60px;
+.first-page, .second-page, footer {
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-main {
-    margin-top: 44px;
-    @include testBorder;
 
-}
 /************* header ***********/
 header {
     @include testBorder;
     display: flex;
-    margin-top: 56px;
     justify-content: space-between;
 
     h1 {
@@ -42,52 +34,48 @@ header > aside {
   }
 /************* end of header ***********/
 
-/************* viewport 1 ***********/
-.viewport1 {
-    width: 1340px;
+/************* first-page ***********/
+main {
+    width: 100%;
+    height: 724px;
+    padding-bottom: 152px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 720px;
-    align-content: space-between;
-    align-items: center;
-    margin-bottom: 112px;
+    flex-flow: column wrap;
+    justify-content:space-between;
 }
 
 .intro-text {
-    width: 648px;
-    height: 248px;
-    margin: 0 0 224px 0;
-    padding-right: 140px;
+  width: 38%;
+  @include testBorder;
 }
 
 .blob {
     @include testBorder;
-    width: 720px;
-    height: 724px; 
+    width: 50%;
+    height: 100%;
     order: 2;
-    margin-top: -60px;
 }
 
 .newsletter {
     @include testBorder;
     order: 1;
     margin: 0;
-    width: 648px;
+    padding-bottom: 50px;
+    width: 50%;
 }
-/************* end of viewport 1 ***********/
+/************* end of first-page ***********/
 
-/************* viewport 2 ***********/
-.viewport2 {
+/************* second-page ***********/
+.second-page {
     @include testBorder;
     display: flex;
-    height: 864px;
-    width: 1320px;
-    margin-bottom: 80px;
+    justify-content: space-between;
+    padding-bottom: 80px;
 }
 
-.all-shows-wrapper {
-    margin-left: 132px;
+.shows-text-wrapper {
+    width: 38%;
+    @include testBorder;
 }
 
 .shows-wrapper2 {
@@ -106,7 +94,7 @@ header > aside {
     height: 312px;
 }
 
-.show-card1, .show-card2, .show-card3, .show-card4 {
+.cards {
     @include testBorder;
     height: 420px;
     margin-bottom: 20px;
@@ -150,18 +138,17 @@ header > aside {
 /************* footer ***********/
 footer {
     @include testBorder;
-    margin-top: 72px;
     height: 300px;
 }
 
 .footer-column-wrapper {
     @include testBorder;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     width: 872px;
     height: 132px;
-    margin-left: 0;
+    margin: 0;
 }
 
 .footer-column {
@@ -172,7 +159,4 @@ h5 {
     margin-top: 24px;
 }
 
-.footer-icon {
-    margin: 104px 60px 36px 288px;
-}
 /************* end of footer ***********/
