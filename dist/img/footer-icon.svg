@@ -1,0 +1,7 @@
+<svg class="footer-icon" width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="80" cy="80" r="75" stroke="#FBFF21" stroke-width="10"/>
+      <circle cx="80" cy="80" r="45" stroke="#FBFF21" stroke-width="10"/>
+      <circle cx="77" cy="85" r="15" stroke="#FBFF21" stroke-width="10"/>
+</svg>
+
+<!-- Q: remove footer-icon class? -->
