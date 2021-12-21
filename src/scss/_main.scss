@@ -1,7 +1,7 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
-$debugging: true;
+$debugging: false;
 
 @mixin testBorder {
   @if $debugging {
@@ -27,7 +27,6 @@ $debugging: true;
 
 /************* first-page ***********/
 .first-page {
-  //@include mobileScreen;
   padding-top: 40px;
   padding-bottom: 336px;
 }
@@ -36,22 +35,12 @@ $debugging: true;
   margin: 28px 48px 28px 0;
 }
 
-.citrusCircus, .newsletter {
-  width: 100%;
-}
-
 .blob-wrapper {
   @include testBorder;
-
-  // width: 100%;
-
+  width: 720px;
   .blob-svg {
-    // @include testBorder;
-    // position: absolute;
+    @include testBorder;
     width: 100%;
-    // width: 455px;
-    // height: 458px;
-
   }
   .mobile {
     display: block;

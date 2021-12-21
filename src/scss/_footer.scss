@@ -1,6 +1,6 @@
 @import "_colors.scss";
 
-$debugging: true;
+$debugging: false;
 
 @mixin testBorder {
   @if $debugging {
