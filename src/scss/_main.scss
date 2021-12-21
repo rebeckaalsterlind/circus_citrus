@@ -27,7 +27,7 @@ $debugging: true;
 
 /************* first-page ***********/
 .first-page {
-  @include mobileScreen;
+  //@include mobileScreen;
   padding-top: 40px;
   padding-bottom: 336px;
 }
