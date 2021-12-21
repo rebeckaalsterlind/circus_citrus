@@ -1,7 +1,7 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
@@ -9,28 +9,40 @@ $debugging: false;
   }
 }
 
+header, .viewport1, .viewport2, footer {
+  margin-left: 20px
+}
+
 main {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-flow: column wrap;
+  margin-top: 28px;
+  // display: flex;
+  // flex-flow: column wrap;
 }
 
 /************* viewport 1 ***********/
 .viewport1 {
-  margin-bottom: 326px;
+  // @include testBorder;
+  margin-bottom: 336px;
 }
 
 .intro-text {
-  margin: 28px 49px 28px 0;
+  margin: 28px 48px 28px 0;
 }
 
 .citrusCircus, .blob, .newsletter {
   width: 100%;
 }
 
+.blob {
+  @include testBorder;
+  width: 455px;
+  height: 458px;
+}
+
 .newsletter {
-  margin-top: 85px;
+  margin-top: 84px;
 }
 
 .newsletter-text {
@@ -38,20 +50,20 @@ main {
 }
 
 .sign-up {
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 input, button {
-  height: 55px;
-  border: 3px solid $color-citrus;
+  height: 56px;
+  border: 3px solid $color-citrus; // not adjust to 4?
 }
 
 input {
   margin-bottom: 40px;
-  padding: 13px 16.75px;
+  padding: 12px 16.75px;
   background-color: transparent;
   border-radius: 0 20px 20px 20px;
-  width: 335px;
+  width: 336px;
 }
 
 input::placeholder {
@@ -62,7 +74,7 @@ button {
   background-color: $color-citrus;
   color: $color-black;
   border-radius: 20px 20px 0 20px;
-  width: 210px;
+  width: 210px; // not adjust to 4?
 }
 
 .rotate {
@@ -75,22 +87,23 @@ text-decoration: none;
 color: $color-citrus;
 font-size: bold;
 }
+/************* end of viewport 1 ***********/
 
 /************* viewport 2 ***********/
 .viewport2 {
   @include testBorder;
-  height: 2299px;
-  width: 335px;
+  height: 2300px;
+  width: 335px; //not adjust to 4? 
 }
 
 .h2-wrapper {
-  width: 390px;
+  width: 392px;
   word-wrap: break-word;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .shows-text1 {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .shows-text2 {
@@ -99,7 +112,7 @@ font-size: bold;
 
 .show-card-img {
   width: 335px;
-  height: 330px;
+  height: 328px;
   background-image: url("../../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg");
   background-size: cover;
   background-position: 50%;
@@ -111,7 +124,7 @@ font-size: bold;
 .show-card-text {
   background-color: $color-kiwi;
   width: 335px;
-  height: 85px;
+  height: 84px;
   border-radius: 20px 20px 0px 20px;
   text-align: center;
   
@@ -120,3 +133,18 @@ font-size: bold;
     padding-top: 12px;
   }
 }
+/************* end of viewport 2 ***********/
+
+/************* cookies ***********/
+#cookies-bar {
+  background-color: $color-disable-button-text;
+  position: fixed;
+  width: 100%;
+  padding: 16px 28px 32px 20px;
+    bottom: 0;
+
+  .cookies-text {
+    margin-bottom: 16px;
+  }
+}
+/************* end of cookies ***********/
