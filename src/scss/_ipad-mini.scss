@@ -6,30 +6,30 @@ $debugging: true;
   }
 }
 
-header, .viewport1, .viewport2, footer {
-    margin: 64px 24px 52px 40px;
+
+.first-page, .second-page, footer {
+    @include testBorder;
+    padding-right: 40px;  //or 24? seems better with even sides but design says different?
+    padding-left: 40px;
 }
 
-/************ viewport 1 ************/
-.viewport1 {
+
+/************ first-page ************/
+.first-page {
     @include testBorder;
-    margin-bottom: 208px;
+    padding-top: 64px;
+    padding-bottom: 212px;
 }
 
 .intro-text {
     margin-top: 56px;
-    margin-right: 220px;
-    max-width: 720px;
-
-    p {
-        width: 508px;
-    }
+    width: 70%;
 }
 
 .blob { 
     @include testBorder;
-    margin-right: 28px;
-
+    width: 100%;
+    height: 724px;
     .blob-svg {
         width: 720px;
         height: 724px;
@@ -42,7 +42,6 @@ header, .viewport1, .viewport2, footer {
 
 .sign-up {
     margin-top: 60px;
-    // flex-direction: row;
 }
 
 input {
@@ -50,19 +49,19 @@ input {
     margin-right: 20px;
     margin-bottom: 0;
 }
-/************ end of viewport 1 ************/
+/************ end of first-page ************/
 
-/************* viewport 2 ***********/
-.viewport2 {
-    @include testBorder;
-    height: 900px;
-    width: 512px;
-    margin-top: 208px;
+/************* second-page ***********/
+.second-page {
+    padding-bottom: 180px;
+}
+
+.shows-text-wrapper {
+    width: 70%;
 }
 
 .h2-wrapper {
     @include testBorder;
-    width: 536px;
 
     .hyphons {
         display: none;
@@ -80,7 +79,8 @@ input {
 .shows-wrapper2 {
     margin-top: 128px;
 }
-/************* end of viewport 2 ***********/
+/************* end of second-page ***********/
+
 
 /************* cookies ***********/
 .cookies-text {
@@ -88,21 +88,22 @@ input {
 }    
 /************* end of cookies ***********/
 
+
 /************* footer ***********/
 footer {
-    @include testBorder;
-    display: flex;
-    height: 780px;
-    margin-top: 1200px;
+   flex-direction: row;
 }
 
 .footer-column-wrapper {
     order: 0;
+    margin: 0;
+    height: 564px;
+    width: 203px;
+    margin-bottom: 48px; 
 }
 
 .footer-icon {
     order: 1;
-    margin-top: 320px;
-    margin-left: 260px;
+    margin: 0;
 }
 /************* end of footer ***********/

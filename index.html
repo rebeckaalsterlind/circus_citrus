@@ -22,34 +22,33 @@
 </head>
 
 <body>
-  <header>
-    <h1>Circus<br />Citrus</h1>
-    <aside id="menu">
-      <img id="menu-icon" src="dist/img/menu-icon.svg" />    
-    </aside>    
-    <div class="sidenav" id="sidenav">
-      <aside>
-        <p class="sidenav-text">Menu</p>
-      </aside>
-      <ul>
-        <li><a href="#" class="menu-link">The Now</a></li>
-        <li><a href="#" class="menu-link">The Future</a></li>
-        <li><a href="#" class="menu-link">The Past</a></li>
-      </ul>
-      <button id="close">Close</button>
-    </div>
-  </header>
-  <main>
-    <section class="viewport1">
-      <article class="intro-text">
-        <p>
-          <span class="link">Circus Citrus</span> is a contemporary performance art collective. 
-          Our mission is to bring unexpected lemonade into the ordinary December darkness. 
-          We only perform when it's dark outside, illuminated by the glow of street lights. 
-          We lurk in the shadows for a joyful surprise. When life brings you lemons, 
-          we bring you lemonade. Cliché as it sounds.
-        </p>
-      </article>
+  <section class="first-page">
+    <header>
+      <h1>Circus<br />Citrus</h1>
+      <aside id="menu">
+        <img id="menu-icon" src="dist/img/menu-icon.svg" />    
+      </aside>    
+      <div class="sidenav" id="sidenav">
+        <aside>
+          <p class="sidenav-text">Menu</p>
+        </aside>
+        <ul>
+          <li><a href="#" class="menu-link">The Now</a></li>
+          <li><a href="#" class="menu-link">The Future</a></li>
+          <li><a href="#" class="menu-link">The Past</a></li>
+        </ul>
+        <button id="close">Close</button>
+      </div>
+    </header>
+    <main>
+      <p class="intro-text">
+        <span class="link">Circus Citrus</span> is a contemporary performance art collective. 
+        Our mission is to bring unexpected lemonade into the ordinary December darkness. 
+        We only perform when it's dark outside, illuminated by the glow of street lights. 
+        We lurk in the shadows for a joyful surprise. When life brings you lemons, 
+        we bring you lemonade. Cliché as it sounds.
+      </p>
+
       <!-- BLOB should prob have an flex-end on media min 1200 but doesnt really work yet. need fixing -->
       <div class="blob">
         <!-- approx viewBox="105 0 207 412 for desktop -->
@@ -113,10 +112,12 @@
           <button class="btn-sign-up"><span class="rotate">Sign up</span></button>
         </div>
       </article>
-    </section>
+    </main>
+  </section>
 
-    <section class="viewport2">
-      <article class="red shows-text-wrapper">
+  <section class="second-page">
+    <!--<section class="viewport2">-->
+      <article class="shows-text-wrapper">
         <div class="h2-wrapper">
           <h2>Our Performan<span class="hyphons">-</span>ces</h2>
         </div>
@@ -145,7 +146,7 @@
 
       <article class="all-shows-wrapper">
         <section class="shows-wrapper1">
-          <article class="show-card1">
+          <article class="cards show-card1">
             <div class="show-card-img show-card-img1">
               <span role="img" aria-label="photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com"></span>
             </div>    
@@ -155,7 +156,7 @@
             </div>
           </article>
 
-          <article class="show-card2">
+          <article class="cards show-card2">
             <div class="show-card-img show-card-img2">
               <span role="img" aria-label="photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com"></span>
             </div>    
@@ -167,7 +168,7 @@
         </section>
 
         <section class="shows-wrapper2">
-          <article class="show-card3">
+          <article class="cards show-card3">
             <div class="show-card-img show-card-img3">
               <span role="img" aria-label="photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com"></span>
             </div>    
@@ -176,7 +177,7 @@
               <h3 class="h3-alt">ROYAL ALBERT HALL</h3>
             </div>
           </article>
-          <article class="show-card4">
+          <article class=" cards show-card4">
             <div class="show-card-img show-card-img4">
               <span role="img" aria-label="photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com"></span>
             </div>    
@@ -188,20 +189,11 @@
         </section>
         
       </article>
-    </section>
-
-    <!-- comment back cookies bar before sent in -->
-    <!-- <div id="cookies-bar">
-      <p class="disclaimer-text cookies-text">
-        Cookie disclaimer text will go here, yes. It will be some GDPR compliant text for all markets, we will not ignore visitors who’re outside of the EU because it will become too difficult at this stage. Hopefully this text will fit onto a maximum of three lines.
-      </p>
-      <button id="btn-accept-cookies">Accept</button>
-    </div> -->
-  </main>
+    <!--</section>-->
+  </section>
 
   <footer>
     <img class="footer-icon" src="dist/img/footer-icon.svg" alt="footer-icon">
-      
     <section class="footer-column-wrapper" >
       <article class="footer-column">
         <h5>The Now</h5> <!-- maybe this shouldnt be a h5?  16px or 18? -->
@@ -216,8 +208,15 @@
         <h5>Contact</h5>
         <h5>Find Us</h5>
       </article>
-    </section>
+    </section>  
   </footer>
+    <!-- comment back cookies bar before sent in -->
+  <!-- <div id="cookies-bar">
+    <p class="disclaimer-text cookies-text">
+      Cookie disclaimer text will go here, yes. It will be some GDPR compliant text for all markets, we will not ignore visitors who’re outside of the EU because it will become too difficult at this stage. Hopefully this text will fit onto a maximum of three lines.
+    </p>
+    <button id="btn-accept-cookies">Accept</button>
+  </div> -->
 </body>
 
 </html>
