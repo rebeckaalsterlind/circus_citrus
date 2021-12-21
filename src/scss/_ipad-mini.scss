@@ -1,4 +1,4 @@
-$debugging: true;
+$debugging: false;
 
 @mixin testBorder {
   @if $debugging {
@@ -24,16 +24,7 @@ $debugging: true;
 .intro-text {
     margin-top: 56px;
     width: 70%;
-}
-
-.blob { 
-    @include testBorder;
-    width: 100%;
-    height: 724px;
-    .blob-svg {
-        width: 720px;
-        height: 724px;
-    }
+    max-width: 720px;
 }
 
 .newsletter {
@@ -49,6 +40,19 @@ input {
     margin-right: 20px;
     margin-bottom: 0;
 }
+
+.blob-wrapper {
+    @include testBorder;
+    height: 724px;
+    .mobile {
+      display: none;
+    }
+    .tablet-desktop {
+      display: block;
+    }
+}
+
+
 /************ end of first-page ************/
 
 /************* second-page ***********/
