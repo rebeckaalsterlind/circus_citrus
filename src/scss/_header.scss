@@ -8,8 +8,13 @@ $debugging: true;
   }
 }
 
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 header > aside {
-  display: none;
   width: 109px;
   height: 112px;
   font-size: 100px;
