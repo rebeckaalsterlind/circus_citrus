@@ -17,6 +17,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 
@@ -24,4 +25,13 @@ header > aside {
   width: 109px;
   height: 112px;
   font-size: 100px;
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-icon {
+  @include testBorder;
+  width: 140px;
 }
