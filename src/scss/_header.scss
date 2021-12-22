@@ -1,19 +1,25 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 
-$debugging: true;
+$debugging: false;
 
 @mixin testBorder {
   @if $debugging {
     outline: 2px solid white;
   }
 }
+//should prob fix wrapping on menu icon on mobile 
+//doesnt always fit but wrapping order is now wrong. 
+// change of item order causes positioning problems
+//needs fixing at some point
 
 header {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
 }
+
 
 header > aside {
   width: 109px;

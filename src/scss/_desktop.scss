@@ -7,16 +7,13 @@ $debugging: false;
 }
 
 .first-page, .second-page, footer {
+    margin: auto;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 60px;  
 }
 
 /************* header ***********/
 header {
-    // @include testBorder;
-    // display: flex;
-    // justify-content: space-between;
-
     h1 {
         @include testBorder;
         margin-top: 8px;
@@ -25,9 +22,6 @@ header {
 }
 
 
-#menu-icon {
-    @include testBorder;
-  }
 /************* end of header ***********/
 
 /************* first-page ***********/
