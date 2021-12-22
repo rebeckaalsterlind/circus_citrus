@@ -26,7 +26,7 @@
     <header>
       <h1>Circus<br />Citrus</h1>
       <aside id="menu">
-        <img id="menu-icon" src="dist/img/menu-icon.svg" />   
+        <img id="menu-icon" src="dist/img/menu-icon.svg" alt="Menu Icon that you can click on to see the whole menu."/>    
       </aside>    
       <div class="sidenav" id="sidenav">
         <aside>
@@ -50,14 +50,9 @@
         we bring you lemonade. Cliché as it sounds.
       </p>
 
-      <!-- BLOB should prob have an flex-end on media min 1200 but doesnt really work yet. need fixing -->
-
       <!-- ============= blob for mobile ==================== -->
       <div class="blob-wrapper">
-        <svg class="blob-svg mobile" width="455" height="458" viewBox="0 0 650 750" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- <svg class="blob-svg mobile" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
-        <!-- <svg class="blob-svg mobile" width="455" height="458" viewBox="0 0 260 410" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
-
+        <svg class="blob-svg mobile" width="455" height="458" viewBox="0 0 340 750" fill="none" xmlns="http://www.w3.org/2000/svg">
 
           <g filter="url(#filter0_d_2_78)">
       
@@ -87,8 +82,6 @@
 
       <!-- ============= blob for tablet/desktop ============ -->
       <svg class="blob-svg tablet-desktop" width="720" height="724" viewBox="0 0 720 724" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- <svg class="blob-svg tablet-desktop" width="100%" height="733" viewBox="0 0 706 733" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
-
   
             <g filter="url(#filter0_d_2_78)">
         
@@ -128,7 +121,7 @@
   </section>
 
   <section class="second-page">
-    <!--<section class="viewport2">-->
+
       <article class="shows-text-wrapper">
         <div class="h2-wrapper">
           <h2>Our Performan<span class="hyphons">-</span>ces</h2>
@@ -159,9 +152,11 @@
       <article class="all-shows-wrapper">
         <section class="shows-wrapper1">
           <article class="cards show-card1">
-            <div class="show-card-img show-card-img1">
-              <span role="img" aria-label="photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com"></span>
-            </div>    
+            <figure class="show-card-img show-card-img1"> 
+              <!-- fig tag -> border radius 5s0% -->
+              <img class="img-card" src="../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg" alt="Photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com."/>
+            </figure>    
+            <!-- kopiera in -->
             <div class="show-card-text">
               <h3>JAN 20/2021</h3>
               <h3 class="h3-alt">ROYAL ALBERT HALL</h3>
@@ -199,13 +194,11 @@
             </div>
           </article>
         </section>
-        
       </article>
-    <!--</section>-->
   </section>
 
   <footer>
-    <img class="footer-icon" src="dist/img/footer-icon.svg" alt="footer-icon">
+    <img class="footer-icon" src="dist/img/footer-icon.svg" alt="Yellow footer icon with 3 circles.">
     <section class="footer-column-wrapper" >
       <article class="footer-column">
         <h5>The Now</h5> <!-- maybe this shouldnt be a h5?  16px or 18? -->
@@ -233,23 +226,4 @@
 
 </html>
 
-<!--moved from head cos it didnt work-->
 <script src="js/script.js"></script> 
-
-<!-- remove to js-file later: -->
-<script>
-
-  gsap.to('#blob-small', {
-    fill: 'red',
-//     rotation: 360,
-//     x: 200,
-//     duration: 2
-});
-
-gsap.to('#footer-icon', {
-  // x: 109,
-// rotation: 360,
-//     duration: 2
-});
-
-</script>

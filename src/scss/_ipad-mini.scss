@@ -44,6 +44,10 @@ input {
 .blob-wrapper {
     @include testBorder;
     height: 724px;
+    // .blob.svg {
+    //     width: 720px;
+    //     height: 724px;
+    // }
     .mobile {
       display: none;
     }

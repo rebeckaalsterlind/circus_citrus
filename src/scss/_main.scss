@@ -1,7 +1,7 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
@@ -9,8 +9,8 @@ $debugging: false;
   }
 }
 @mixin mobileScreen {
-  width: 375;
-  height: 667px;
+  width: 375px;
+  // height: 667px;
 }
 
 .first-page, .second-page {
@@ -19,11 +19,13 @@ $debugging: false;
 
 .first-page, .second-page, footer {
   width: 100%;
-  padding-right: 20px;
   padding-left: 20px;
 }
 
-
+//all parts of first-page except blob 
+header, .intro-text, .newletter, .second-page, footer {
+  padding-right: 20px;
+}
 
 /************* first-page ***********/
 .first-page {
@@ -37,11 +39,16 @@ $debugging: false;
 }
 
 .blob-wrapper {
-  @include testBorder;
-  width: 720px;
+  position: relative;
+  height: 600px;
+
+  // @include testBorder;
   .blob-svg {
     @include testBorder;
+  position: absolute;
     width: 100%;
+    // right: -40px;
+    height: 600px;
   }
   .mobile {
     display: block;
@@ -117,14 +124,21 @@ color: $color-citrus;
 }
 
 .show-card-img {
+  overflow: hidden;
   width: 335px;
   height: 328px;
-  background-image: url("../../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg");
-  background-size: cover;
-  background-position: 50%;
+  // background-image: url("../../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg");
+  // background-size: cover;
+  // background-position: 50%;
+  position: relative;
   border-radius: 50%;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.img-card {
+  position: absolute;
+  left: -100px;
 }
 
 .show-card-text {
