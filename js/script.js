@@ -2,7 +2,7 @@ let colorWhite = '#FFFFFF';
 let colorMenuText = '#D02060';
 //open menu
 document.getElementById("menu").addEventListener('click', () => {
-  document.getElementById("sidenav").style.width = "1008px";
+  document.getElementById("sidenav").classList.toggle("show");
 
   gsap.to('#menu-icon', {
     x: -598,
@@ -31,7 +31,7 @@ document.getElementById("menu").addEventListener('click', () => {
 
 //close menu
 document.getElementById("close").addEventListener("click", () => {
-  document.getElementById("sidenav").style.width = "0";
+  document.getElementById("sidenav").classList.remove("show");
 
   gsap.to('#menu-icon', {
     x: 0,
