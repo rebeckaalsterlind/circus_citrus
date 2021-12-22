@@ -11,10 +11,6 @@ document.getElementById("close").addEventListener("click", () => {
 })
 
 // blob
-let blobSmall = document.getElementById("blob-small");
-let blobMedium = document.getElementById("blob-medium");
-let blobLarge = document.getElementById("blob-large");
-
 let durationTime = 4;
 let repeatVal = -1;
 let repeatDelayVal = 1;

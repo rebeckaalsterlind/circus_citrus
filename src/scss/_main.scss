@@ -1,7 +1,7 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
-$debugging: true;
+$debugging: false;
 
 @mixin testBorder {
   @if $debugging {
@@ -40,22 +40,15 @@ $debugging: true;
 }
 
 .blob-wrapper {
+  @include testBorder;
   position: relative;
-  height: 600px;
-
-  // @include testBorder;
+  height: 1000px;
+  overflow: hidden;
+  
   .blob-svg {
     @include testBorder;
-  position: absolute;
-    width: 100%;
-    // right: -40px;
-    height: 600px;
-  }
-  .mobile {
-    display: block;
-  }
-  .tablet-desktop {
-    display: none;
+    position: absolute;
+    left: 10%;
   }
 }
 
