@@ -12,6 +12,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+
 }
 
 header > aside {
@@ -20,6 +21,11 @@ header > aside {
   font-size: 100px;
 }
 
+#menu {
+  z-index: 2;
+}
+
 #menu-icon {
   @include testBorder;
+  width: 140px;
 }
