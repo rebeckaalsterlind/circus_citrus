@@ -137,7 +137,7 @@ color: $color-citrus;
   margin-bottom: 60px;
 }
 
-.show-card-img {
+.show-card-img-wrapper {
   overflow: hidden;
   width: 335px;
   height: 328px;
@@ -145,11 +145,12 @@ color: $color-citrus;
   border-radius: 50%;
   margin-top: 40px;
   margin-bottom: 20px;
-}
 
-.img-card {
-  position: absolute;
-  left: -100px;
+  .show-card-img {
+    position: absolute;
+    left: -100px;
+  }
+
 }
 
 .show-card-text {
