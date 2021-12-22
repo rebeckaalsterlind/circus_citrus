@@ -3,39 +3,39 @@ $font-family-rubikmono: 'Rubik Mono One', sans-serif;
 
 h1 {
     font-family: $font-family-rubikmono;
-    font-size: 72px;
+    font-size: 4.5rem;
     line-height: 110px;
     margin: 0;
 }
 
 h2 {
     font-family: $font-family-rubikmono;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 50px;
 }
 
 h3 {
     font-family: $font-family-rubikmono;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .h3-alt {
-    font-size: 18px;
+    font-size: 1.13rem;
 }
 
 h4 {
     font-family: $font-family-rubikmono;
-    font-size: 18px;
+    font-size: 1.13rem;
 }
 
 h5 { 
     font-family: $font-family-rubikmono;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 30px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 32px;
 }
 
@@ -44,11 +44,11 @@ input, button, .menu-link, .sidenav-text {
 }
 
 button {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
   
 input {
-    font-size: 14px;
+    font-size: 0.88rem;
 }
 
 .link {
@@ -56,18 +56,18 @@ input {
 }
 
 .menu-link {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .sidenav button {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .sidenav-text {
-    font-size: 18px;
+    font-size: 1.13rem;
 }
 
 .disclaimer-text {
-    font-size: 14px;
+    font-size: 0.88rem;
     line-height: 22px;
 }
