@@ -6,7 +6,6 @@ $debugging: false;
   }
 }
 
-
 .first-page, .second-page, footer {
     @include testBorder;
     padding-right: 40px;  //or 24? seems better with even sides but design says different?
@@ -43,19 +42,11 @@ input {
 
 .blob-wrapper {
     @include testBorder;
-    height: 724px;
-    // .blob.svg {
-    //     width: 720px;
-    //     height: 724px;
-    // }
-    .mobile {
-      display: none;
-    }
-    .tablet-desktop {
-      display: block;
-    }
-}
 
+    .blob.svg {
+        left: 0;
+    }
+  }
 
 /************ end of first-page ************/
 
