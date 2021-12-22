@@ -70,7 +70,7 @@ main {
 /************* second-page ***********/
 .second-page {
     @include testBorder;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 80px;
 }
@@ -78,6 +78,11 @@ main {
 .shows-text-wrapper {
     width: 38%;
     @include testBorder;
+}
+
+.all-shows-wrapper {
+    width: 50%;
+    flex-direction: row;
 }
 
 .shows-wrapper2 {

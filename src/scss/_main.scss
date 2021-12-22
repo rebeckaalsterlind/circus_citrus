@@ -14,28 +14,29 @@ $debugging: true;
 }
 
 .first-page, .second-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   min-height: 100vh;
+  max-width: 1440px;
 }
 
 .first-page, .second-page, footer {
   width: 100%;
   padding-left: 20px;
-}
-
-//all parts of first-page except blob 
-header, .intro-text, .newletter, .second-page, footer {
   padding-right: 20px;
 }
 
 /************* first-page ***********/
 .first-page {
-
   padding-top: 40px;
   padding-bottom: 336px;
 }
 
 .intro-text {
   margin: 28px 48px 28px 0;
+  max-width: 575px;
+  border: 1px solid purple;
 }
 
 .blob-wrapper {
@@ -110,9 +111,23 @@ color: $color-citrus;
   padding-bottom: 184px;
 }
 
+.shows-text-wrapper {
+  margin-left: 0px;
+  margin-right: 48px;
+  max-width: 575px;
+  border: 1px solid purple;
+}
+
 .h2-wrapper {
   word-wrap: break-word;
   margin-bottom: 20px;
+}
+
+.all-shows-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .shows-text1 {

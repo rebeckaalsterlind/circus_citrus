@@ -22,9 +22,9 @@ $debugging: false;
 }
 
 .intro-text {
+    margin-right: 0;
     margin-top: 56px;
-    width: 70%;
-    max-width: 720px;
+    max-width: 768px;
 }
 
 .newsletter {
@@ -65,7 +65,7 @@ input {
 }
 
 .shows-text-wrapper {
-    width: 70%;
+    max-width: 768px;
 }
 
 .h2-wrapper {
@@ -81,11 +81,19 @@ input {
 }
 
 .all-shows-wrapper {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid green;
+    max-width: 768px;
 }
 
 .shows-wrapper2 {
     margin-top: 128px;
+}
+
+.cards {
+    //margin: 0 5% 0 5%;
+    border: 2px solid red;
 }
 /************* end of second-page ***********/
 
