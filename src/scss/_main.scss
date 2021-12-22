@@ -1,7 +1,7 @@
 @import "_colors.scss"; // (usage) color: $color-citrus
 @import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
 
-$debugging: false;
+$debugging: true;
 
 @mixin testBorder {
   @if $debugging {
@@ -10,7 +10,7 @@ $debugging: false;
 }
 @mixin mobileScreen {
   width: 375;
-  height: 667px;
+  // height: 667px;
 }
 
 .first-page, .second-page {
@@ -19,11 +19,13 @@ $debugging: false;
 
 .first-page, .second-page, footer {
   width: 100%;
-  padding-right: 20px;
   padding-left: 20px;
 }
 
-
+//all parts of first-page except blob 
+header, .intro-text, .newletter, .second-page, footer {
+  padding-right: 20px;
+}
 
 /************* first-page ***********/
 .first-page {
@@ -37,10 +39,10 @@ $debugging: false;
 
 .blob-wrapper {
   @include testBorder;
-  width: 720px;
   .blob-svg {
     @include testBorder;
     width: 100%;
+    height: 600px;
   }
   .mobile {
     display: block;
