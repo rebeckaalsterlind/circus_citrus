@@ -13,9 +13,9 @@ $debugging: false;
 
 /************* header ***********/
 header {
-    @include testBorder;
-    display: flex;
-    justify-content: space-between;
+    // @include testBorder;
+    // display: flex;
+    // justify-content: space-between;
 
     h1 {
         @include testBorder;
@@ -24,9 +24,6 @@ header {
     }
 }
 
-header > aside {
-    display: block;
-}
 
 #menu-icon {
     @include testBorder;

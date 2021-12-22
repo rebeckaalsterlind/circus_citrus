@@ -18,11 +18,12 @@ $debugging: true;
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  max-width: 1440px;
+
 }
 
 .first-page, .second-page, footer {
   width: 100%;
+  max-width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -36,7 +37,6 @@ $debugging: true;
 .intro-text {
   margin: 28px 48px 28px 0;
   max-width: 575px;
-  border: 1px solid purple;
 }
 
 .blob-wrapper {
@@ -114,8 +114,7 @@ color: $color-citrus;
 .shows-text-wrapper {
   margin-left: 0px;
   margin-right: 48px;
-  max-width: 575px;
-  border: 1px solid purple;
+  max-width: 576px;
 }
 
 .h2-wrapper {
@@ -142,9 +141,6 @@ color: $color-citrus;
   overflow: hidden;
   width: 335px;
   height: 328px;
-  // background-image: url("../../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg");
-  // background-size: cover;
-  // background-position: 50%;
   position: relative;
   border-radius: 50%;
   margin-top: 40px;
