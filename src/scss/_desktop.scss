@@ -88,11 +88,11 @@ main {
     margin-top: 0;
 }
 
-.show-card-img, .show-card-text {
+.show-card-img-wrapper, .show-card-text {
     width: 316px;  
 }
 
-.show-card-img {
+.show-card-img-wrapper {
     height: 312px;
 }
 
@@ -102,11 +102,11 @@ main {
     margin-bottom: 20px;
 }
 
-.show-card-img1, .show-card-img3 {
+.show-card-img-wrapper1, .show-card-img-wrapper3 {
     margin-top: 0;
 } 
 
-.show-card-img2, .show-card-img4 {
+.show-card-img-wrapper2, .show-card-img-wrapper4 {
     margin-top: 20px;
 }
 
