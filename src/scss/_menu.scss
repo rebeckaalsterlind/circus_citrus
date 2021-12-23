@@ -1,24 +1,28 @@
-// this section is missing right position on menu-link from the top
-// .sidenav-text is not finished etc. 
-
-
-#menu-icon {
-  @include testBorder;
-}
 
 .sidenav {
-  height: 100%;
   width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: #34352A;
-  overflow-x: hidden;
   transition: 0.5s;
 }
 
-.sidenav li {
+.show li {
   list-style: none;
 }
 
@@ -27,44 +31,18 @@
   color: white;
 }
 
-.sidenav > ul, .sidenav > button {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.sidenav > button {
-  bottom: 95px;
+.show > button {
+  margin-bottom: 100px;
   color: $color-citrus;
   background-color: transparent;
   border: none;
 }
 
 ul {
-  border: 1px solid white;
-  top: 30%;
-  bottom: 37%;
+  height: 33%;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sidenav > aside { 
-  position: absolute; 
-  left: 48px;
-  top: 48px;
-  width: 130px;
-}
-
-.sidenav-text {
-  color: $color-menu-text;
-  text-transform: uppercase;
-  transform: rotate(1.44deg);
-}
-
-.line {
-  height: 5px;
-  width: 100%;
-  background-color: $color-menu-text;
-  border-radius: 5px;
-}
