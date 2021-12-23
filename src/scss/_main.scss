@@ -82,27 +82,36 @@ input::placeholder {
   color: white;
 }
 
+input:hover {
+  border-color: $color-kiwi;
+}
+
 button {
+  cursor: pointer;
   background-color: $color-citrus;
   color: $color-black;
   border-radius: 20px 20px 0 20px;
   width: 212px; 
 }
 
+button:hover {
+  background-color: $color-kiwi;
+  border-color: $color-kiwi;
+}
+
 .rotate {
-display: block;
-transform: rotate(-1deg);
+  display: block;
+  transform: rotate(-1deg);
 }
 
 .link {
-text-decoration: none;
-color: $color-citrus;
+  text-decoration: none;
+  color: $color-citrus;
 }
 /************* end of first-page ***********/
 
 /************* second-page ***********/
 .second-page {
-  @include mobileScreen;
   padding-bottom: 184px;
 }
 
@@ -178,9 +187,10 @@ color: $color-citrus;
   padding: 16px 28px 32px 20px;
   bottom: 0;
 
-  .cookies-text {
-    margin-bottom: 16px;
-  }
+.cookies-text {
+  margin-bottom: 16px;
+}
+
 }
 /************* end of cookies ***********/
 

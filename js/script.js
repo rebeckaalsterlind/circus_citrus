@@ -1,5 +1,6 @@
 let colorWhite = '#FFFFFF';
 let colorMenuText = '#D02060';
+
 //open menu
 document.getElementById("menu").addEventListener('click', () => {
   
@@ -69,7 +70,7 @@ let repeatVal = -1;
 let repeatDelayVal = 1;
 
 //change colors of blob elements:
-gsap.to('#blob-small', {
+gsap.to('blob-small', {
   duration: durationTime,
   fill: '#CCD00E',
   repeat: repeatVal,
@@ -77,7 +78,7 @@ gsap.to('#blob-small', {
   yoyo: true,
 });
 
-gsap.to('#blob-medium', {
+gsap.to('blob-medium', {
   duration: durationTime,
   fill: '#FBFF21',
   repeat: repeatVal,
@@ -85,10 +86,15 @@ gsap.to('#blob-medium', {
   yoyo: true,
 });
 
-gsap.to('#blob-large', {
+gsap.to(document.getElementById('blob-large'), {
   duration: durationTime,
   fill: '#FFF065',
   repeat: repeatVal,
   repeatDelay: repeatDelayVal,
   yoyo: true,
 });
+
+//remove cookie bar
+document.getElementById("btn-accept-cookies").addEventListener("click", () => {
+  document.getElementById("cookies-bar").style.display= "none";
+})

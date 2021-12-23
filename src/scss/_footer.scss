@@ -34,3 +34,8 @@ footer {
   width: 203px;
   border-top: 10px solid $color-citrus;
 }
+
+h5:hover {
+  color: $color-kiwi;
+  cursor: pointer;
+}

@@ -4,14 +4,14 @@ $font-family-rubikmono: 'Rubik Mono One', sans-serif;
 h1 {
     font-family: $font-family-rubikmono;
     font-size: 4.5rem;
-    line-height: 110px;
+    line-height: 6.9rem;
     margin: 0;
 }
 
 h2 {
     font-family: $font-family-rubikmono;
     font-size: 2.5rem;
-    line-height: 50px;
+    line-height: 3.1rem;
 }
 
 h3 {
@@ -36,7 +36,7 @@ h5 {
 
 p {
     font-size: 1.25rem;
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 input, button, .menu-link, .sidenav-text {
@@ -48,7 +48,7 @@ button {
 }
   
 input {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
 }
 
 .link {
@@ -63,11 +63,7 @@ input {
     font-size: 3rem;
 }
 
-.sidenav-text {
-    font-size: 1.13rem;
-}
-
 .disclaimer-text {
     font-size: 0.88rem;
-    line-height: 22px;
+    line-height: 1.4rem;
 }

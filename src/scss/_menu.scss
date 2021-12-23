@@ -31,11 +31,20 @@
   color: white;
 }
 
+a:hover {
+  color: $color-kiwi;
+}
+
 .show > button {
   margin-bottom: 100px;
   color: $color-citrus;
   background-color: transparent;
   border: none;
+}
+
+.show button:hover {
+  color: $color-kiwi;
+  cursor: pointer;
 }
 
 ul {
