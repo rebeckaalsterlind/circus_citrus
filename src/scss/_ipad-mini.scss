@@ -8,26 +8,13 @@ $debugging: false;
 
 .first-page, .second-page, footer {
     @include testBorder;
-    padding-right: 40px;  //or 24? seems better with even sides but design says different?
+    padding-right: 40px;  
     padding-left: 40px;
 }
 
 
 /************ first-page ************/
 
-// header {
-//     flex-wrap: nowrap;
-// }
-
-// h1 {
-//     order: 0;
-// }
-
-// #menu {
-//     width: 100%;
-//     border: 1px solid green;
-//     order: 1;
-// }
 
 .first-page {
     @include testBorder;
@@ -72,14 +59,6 @@ input {
 
 .shows-text-wrapper {
     max-width: 768px;
-}
-
-.h2-wrapper {
-    @include testBorder;
-
-    // .hyphons {
-    //     display: none;
-    // }
 }
 
 .shows-text2 {
