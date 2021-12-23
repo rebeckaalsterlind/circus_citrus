@@ -102,6 +102,7 @@ color: $color-citrus;
 
 /************* second-page ***********/
 .second-page {
+  @include mobileScreen;
   padding-bottom: 184px;
 }
 
@@ -114,6 +115,14 @@ color: $color-citrus;
 .h2-wrapper {
   word-wrap: break-word;
   margin-bottom: 20px;
+  width: 56%; //only for testing, remove later
+  
+  .hyphenate {
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 .all-shows-wrapper {

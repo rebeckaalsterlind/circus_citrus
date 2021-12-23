@@ -77,9 +77,9 @@ input {
 .h2-wrapper {
     @include testBorder;
 
-    .hyphons {
-        display: none;
-    }
+    // .hyphons {
+    //     display: none;
+    // }
 }
 
 .shows-text2 {
