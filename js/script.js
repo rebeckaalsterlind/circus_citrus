@@ -92,3 +92,10 @@ gsap.to('#blob-large', {
   repeatDelay: repeatDelayVal,
   yoyo: true,
 });
+
+//remove cookie bar
+document.getElementById("btn-accept-cookies").addEventListener("click", () => {
+
+  document.getElementById("cookies-bar").style.display= "none";
+
+})

@@ -102,7 +102,6 @@ color: $color-citrus;
 
 /************* second-page ***********/
 .second-page {
-  @include mobileScreen;
   padding-bottom: 184px;
 }
 
@@ -178,9 +177,10 @@ color: $color-citrus;
   padding: 16px 28px 32px 20px;
   bottom: 0;
 
-  .cookies-text {
-    margin-bottom: 16px;
-  }
+.cookies-text {
+  margin-bottom: 16px;
+}
+
 }
 /************* end of cookies ***********/
 
