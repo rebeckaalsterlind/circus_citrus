@@ -2,12 +2,12 @@ let colorWhite = '#FFFFFF';
 let colorMenuText = '#D02060';
 //open menu
 document.getElementById("menu").addEventListener('click', () => {
-  document.getElementById("sidenav").classList.toggle("show");
+  
+  //disabling close on menu link
+  document.getElementById('menu').id = "disabled";
 
-  gsap.to('#menu-icon', {
-    x: -598,
-    y: -20,
-  })
+  document.getElementById("sidenav").classList.toggle("show");
+  document.getElementById("menu-icon").classList.add("menu-icon");
 
   gsap.to('#menu-icon-text', {
     fill: colorMenuText,
@@ -27,11 +27,17 @@ document.getElementById("menu").addEventListener('click', () => {
   gsap.to('#menu-cross-right', {
     stroke: "none",
   });
+
 });
 
 //close menu
 document.getElementById("close").addEventListener("click", () => {
-  document.getElementById("sidenav").classList.remove("show");
+
+  //enabling close on menu link
+  document.getElementById('disabled').id = "menu";
+
+  document.getElementById("sidenav").classList.toggle("show");
+  document.getElementById("menu-icon").classList.remove("menu-icon");
 
   gsap.to('#menu-icon', {
     x: 0,

@@ -7,31 +7,28 @@ $debugging: false;
     outline: 2px solid white;
   }
 }
-//should prob fix wrapping on menu icon on mobile 
-//doesnt always fit but wrapping order is now wrong. 
-// change of item order causes positioning problems
-//needs fixing at some point
+
 
 header {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
-
+  overflow: hidden;
 }
 
-
-header > aside {
-  width: 109px;
-  height: 112px;
-  font-size: 100px;
-}
-
-#menu {
+#disabled {
   z-index: 2;
 }
 
-#menu-icon {
-  @include testBorder;
-  width: 140px;
+#menu-icon{
+  width: 110px;
+} 
+
+.menu-icon {
+  position: fixed;
+  width: 140px !important;
+  left: 50px;
 }
+
