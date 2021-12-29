@@ -9,6 +9,8 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +26,8 @@
     <header>          
       <h1 tabindex="0">Circus<br />Citrus</h1> 
       <button id="menu">
-        <svg id="menu-icon" aria-label="Clickable menu icon to open the menu." width="109" height="115" viewBox="0 0 109 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- add "alt"-text: https://css-tricks.com/accessible-svgs/ -->
+        <svg id="menu-icon" width="109" height="115" viewBox="0 0 109 115" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line id="menu-cross-left" x1="12.5355" y1="3" x2="100" y2="90.4645" stroke="white" stroke-width="5" stroke-linecap="round"/>
           <line id="menu-cross-right" x1="18" y1="111.464" x2="105.464" y2="24" stroke="white" stroke-width="5" stroke-linecap="round"/>
           
@@ -67,16 +70,16 @@
           <!-- blob-small -->
           <path id="blob-small" d="M486.683 384.172C345.748 346.777 362.49 283.678 383.143 205.841C403.796 128.005 483.638 81.6485 561.474 102.302C643.182 128.688 694.828 241.284 665.014 280.633C593.258 375.336 564.519 404.825 486.683 384.172Z" fill="#FFF065"/>
           <defs>
-            <filter id="filter0_d_2_78" x="225" y="276.68" width="458.899" height="456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-              <feOffset dy="4"/>
-              <feGaussianBlur stdDeviation="2"/>
-              <feComposite in2="hardAlpha" operator="out"/>
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_78"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_78" result="shape"/>
-            </filter>
+          <filter id="filter0_d_2_78" x="225" y="276.68" width="458.899" height="456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dy="4"/>
+          <feGaussianBlur stdDeviation="2"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_78"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_78" result="shape"/>
+          </filter>
           </defs>
         </svg>
       </div>
@@ -95,9 +98,11 @@
   <section class="second-page">
 
       <article class="shows-text-wrapper">
+
         <div class="h2-wrapper" lang="en">
           <h2>Our<br /> Performan<wbr>ces</h2>
         </div>
+
         <p class="shows-text1">Lorem ipsum dolizzle pot amizzle, uhuh ... yih! adipiscing elizzle. 
           Nullam sapien velizzle, fizzle volutpizzle, suscipizzle get down get down, 
           gravida gangster, shiz. Pellentesque fizzle tortor. Fo erizzle. 
@@ -124,7 +129,7 @@
         <section class="shows-wrapper1">
           <article class="cards show-card1" tabindex="0">
             <figure class="show-card-img-wrapper show-card-img-wrapper1"> 
-              <img class="show-card-img" src="../dist/img/man-in-red-coat-on-stage-mark-williams-unsplash.jpg" alt="Photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com."/>
+              <img class="show-card-img" src="https://unsplash.com/photos/9bNmhMKQM1Q?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" alt="Photo of man in red coat on stage, by Mark Williams downloaded from unsplash.com."/>
             </figure>    
             <div class="show-card-text">
               <h3>JAN 20/2021</h3>
@@ -171,7 +176,7 @@
     <img class="footer-icon" src="dist/img/footer-icon.svg" alt="Yellow footer icon with 3 circles.">
     <section class="footer-column-wrapper" >
       <article class="footer-column">
-        <a href="#/" class="link"><h5>The Now</h5></a> 
+        <a href="#/" class="link"><h5>The Now</h5></a> <!-- maybe this shouldnt be a h5?  16px or 18? -->
         <a href="#/" class="link"><h5>The Future</h5></a>
         <a href="#/" class="link"><h5>The Past</h5></a>
       </article>
@@ -185,7 +190,6 @@
       </article>
     </section>  
   </footer>
-
   <div id="cookies-bar">
     <p class="disclaimer-text cookies-text">
       Cookie disclaimer text will go here, yes. It will be some GDPR compliant text for all markets, we will not ignore visitors who’re outside of the EU because it will become too difficult at this stage. Hopefully this text will fit onto a maximum of three lines.
