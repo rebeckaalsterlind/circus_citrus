@@ -67,8 +67,6 @@ document.getElementById("close").addEventListener("click", () => {
 
 });
 
-
-
 // blob
 const durationTime = 4;
 const repeatVal = -1;

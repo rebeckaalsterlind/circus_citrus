@@ -1,21 +1,11 @@
 @import "_colors.scss";
 
-$debugging: false;
-
-@mixin testBorder {
-  @if $debugging {
-    outline: 2px solid white;
-  }
-}
-
 footer {
-  @include testBorder;
   align-items: center;
   justify-content: space-between;
 }
 
 .footer-icon {
-  @include testBorder;
   width: 160px;
   height: 160px;
 }
@@ -36,11 +26,10 @@ footer {
 }
 
 h5 {
-  color: white;
+  color: $color-white;
 }
 
 h5:hover {
   color: $color-kiwi;
   cursor: pointer;
 }
-

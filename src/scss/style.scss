@@ -1,12 +1,14 @@
 @import "_normalize";
 
-@import "_base.scss"; //mobile version 375px x 667px
+//mobile version 375px x 667px
+@import "_base.scss"; 
 
-// ipad mini 4 is 768px x 1024px
+// ipad mini 
 @media screen and (min-width: 736px) {
     @import "_ipad-mini.scss";
 }
 
-@media screen and (min-width: 1440px) { //height: 1024px
+//desktop, height: 1024px
+@media screen and (min-width: 1440px) { 
     @import "_desktop.scss";
 }

@@ -1,23 +1,10 @@
-$debugging: false;
-
-@mixin testBorder {
-  @if $debugging {
-    outline: 2px solid white;
-  }
-}
-
 .first-page, .second-page, footer {
-    @include testBorder;
     padding-right: 40px;  
     padding-left: 40px;
 }
 
-
 /************ first-page ************/
-
-
 .first-page {
-    @include testBorder;
     padding-top: 64px;
     padding-bottom: 212px;
 }
@@ -38,18 +25,12 @@ $debugging: false;
 
 input {
     width: 400px;
-
     margin-bottom: 0;
 }
 
-.blob-wrapper {
-    @include testBorder;
-
-    .blob.svg {
-        left: 0;
-    }
-  }
-
+.blob.svg {
+    left: 0;
+}
 /************ end of first-page ************/
 
 /************* second-page ***********/
@@ -74,16 +55,13 @@ input {
 .shows-wrapper2 {
     margin-top: 128px;
 }
-
 /************* end of second-page ***********/
-
 
 /************* cookies ***********/
 .cookies-text {
     max-width: 876px;
 }    
 /************* end of cookies ***********/
-
 
 /************* footer ***********/
 footer {
@@ -103,4 +81,3 @@ footer {
     margin: 0;
 }
 /************* end of footer ***********/
-

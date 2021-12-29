@@ -1,23 +1,10 @@
-@import "_colors.scss"; // (usage) color: $color-citrus
-@import "_fonts.scss"; //(usage) font-family: $font-family-rubik;
-
-$debugging: false;
-
-@mixin testBorder {
-  @if $debugging {
-    outline: 2px solid white;
-  }
-}
-@mixin mobileScreen {
-  width: 375px;
-  // height: 667px;
-}
+@import "_colors.scss"; 
+@import "_fonts.scss"; 
 
 .first-page, .second-page {
   align-items: flex-start;
   min-height: 100vh;
 }
-
 
 .first-page, .second-page, footer {
   display: flex;
@@ -40,13 +27,11 @@ $debugging: false;
 }
 
 .blob-wrapper {
-  @include testBorder;
   position: relative;
   height: 1000px;
   overflow: hidden;
   left: 20px;
   .blob-svg {
-    @include testBorder;
     position: absolute;
     left: 10%;
   }
@@ -127,14 +112,6 @@ button {
 .h2-wrapper {
   word-wrap: break-word;
   margin-bottom: 20px;
-  width: 56%; //only for testing, remove later
-  
-  .hyphenate {
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
 }
 
 .all-shows-wrapper {
@@ -165,7 +142,6 @@ button {
     position: absolute;
     left: -100px;
   }
-
 }
 
 .show-card-text {
@@ -190,10 +166,8 @@ button {
   padding: 16px 28px 32px 20px;
   bottom: 0;
 
-.cookies-text {
-  margin-bottom: 16px;
-}
-
+  .cookies-text {
+    margin-bottom: 16px;
+  }
 }
 /************* end of cookies ***********/
-
