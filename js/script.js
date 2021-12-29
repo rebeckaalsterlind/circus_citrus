@@ -75,7 +75,7 @@ const repeatVal = -1;
 const repeatDelayVal = 1;
 
 //change colors of blob elements:
-gsap.to('blob-small', {
+gsap.to('#blob-small', {
   duration: durationTime,
   fill: '#CCD00E',
   repeat: repeatVal,
@@ -83,7 +83,7 @@ gsap.to('blob-small', {
   yoyo: true,
 });
 
-gsap.to('blob-medium', {
+gsap.to('#blob-medium', {
   duration: durationTime,
   fill: '#FBFF21',
   repeat: repeatVal,
@@ -91,7 +91,7 @@ gsap.to('blob-medium', {
   yoyo: true,
 });
 
-gsap.to(document.getElementById('blob-large'), {
+gsap.to('#blob-large', {
   duration: durationTime,
   fill: '#FFF065',
   repeat: repeatVal,
