@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Thanks to great team work by Rebecka Alsterlind and Emma Hammar. Big thanks to our teacher Jenni Pulli for all the help. 
+     
+
+# THANKS
+    Card image from https://unsplash.com/photos/9bNmhMKQM1Q?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink  
+
+# TECHNOLOGY COLOPHON
+    HTML5
