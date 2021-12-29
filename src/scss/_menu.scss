@@ -7,6 +7,7 @@
   overflow: hidden;
 }
 
+
 .show {
   display: flex;
   flex-direction: column;
@@ -31,7 +32,7 @@
   color: white;
 }
 
-a:hover {
+a:hover, #close:hover {
   color: $color-kiwi;
 }
 
@@ -40,11 +41,6 @@ a:hover {
   color: $color-citrus;
   background-color: transparent;
   border: none;
-}
-
-.show button:hover {
-  color: $color-kiwi;
-  cursor: pointer;
 }
 
 ul {

@@ -64,7 +64,7 @@ $debugging: false;
   margin-top: 24px;
 }
 
-input, button {
+input, .primary-btn {
   height: 56px;
   border: 3px solid $color-citrus;
 }
@@ -78,7 +78,7 @@ input {
   max-width: 336px;
 }
 
-input::placeholder {
+input::placeholder, input {
   color: white;
 }
 
@@ -88,13 +88,16 @@ input:hover {
 
 button {
   cursor: pointer;
+}
+
+.primary-btn {
   background-color: $color-citrus;
   color: $color-black;
   border-radius: 20px 20px 0 20px;
   width: 212px; 
 }
 
-button:hover {
+.primary-btn:hover {
   background-color: $color-kiwi;
   border-color: $color-kiwi;
 }

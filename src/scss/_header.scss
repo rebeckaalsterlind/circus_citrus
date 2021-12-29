@@ -18,21 +18,21 @@ header {
   overflow: hidden;
 }
 
-#disabled {
-  z-index: 2;
-}
-
 #menu {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
-#menu-icon{
-  width: 110px;
+#menu-icon {
+  z-index: 2;
+  width: 140px;
 } 
 
 .menu-icon {
   position: fixed;
   width: 140px !important;
   left: 50px;
+  cursor: default;
 }
 

@@ -1,22 +1,25 @@
-let colorWhite = '#FFFFFF';
-let colorMenuText = '#D02060';
+const colorWhite = '#FFFFFF';
+const colorMenuText = '#D02060';
 
 //open menu
 document.getElementById("menu").addEventListener('click', () => {
-  
-  //disabling close on menu link
-  document.getElementById('menu').id = "disabled";
 
-  document.getElementById("sidenav").classList.toggle("show");
+  document.getElementById("sidenav").classList.add("show");
   document.getElementById("menu-icon").classList.add("menu-icon");
+
+  //add tab index when menu is visible
+  document.getElementById("tab1").tabIndex = "0";
+  document.getElementById("tab2").tabIndex = "0";
+  document.getElementById("tab3").tabIndex = "0";
+  document.getElementById("close").tabIndex = "0";
 
   gsap.to('#menu-icon-text', {
     fill: colorMenuText,
     rotate: 45,
     x: 10,
     y: -70,
-  
   });
+
   gsap.to('#menu-cross-left', {
     stroke: colorMenuText,
     rotate: -45,
@@ -34,16 +37,14 @@ document.getElementById("menu").addEventListener('click', () => {
 //close menu
 document.getElementById("close").addEventListener("click", () => {
 
-  //enabling close on menu link
-  document.getElementById('disabled').id = "menu";
-
-  document.getElementById("sidenav").classList.toggle("show");
+  document.getElementById("sidenav").classList.remove("show");
   document.getElementById("menu-icon").classList.remove("menu-icon");
 
-  gsap.to('#menu-icon', {
-    x: 0,
-    y: 0,
-  })
+  //remove tab index when menu is not visible
+  document.getElementById("tab1").tabIndex = "-1";
+  document.getElementById("tab2").tabIndex = "-1";
+  document.getElementById("tab3").tabIndex = "-1";
+  document.getElementById("close").tabIndex = "-1";
 
   gsap.to('#menu-icon-text', {
     fill: colorWhite,
@@ -52,6 +53,7 @@ document.getElementById("close").addEventListener("click", () => {
     y: 0,
   
   });
+
   gsap.to('#menu-cross-left', {
     stroke: colorWhite,
     rotate: 0,
@@ -62,12 +64,15 @@ document.getElementById("close").addEventListener("click", () => {
   gsap.to('#menu-cross-right', {
     stroke: colorWhite,
   });
-})
+
+});
+
+
 
 // blob
-let durationTime = 4;
-let repeatVal = -1;
-let repeatDelayVal = 1;
+const durationTime = 4;
+const repeatVal = -1;
+const repeatDelayVal = 1;
 
 //change colors of blob elements:
 gsap.to('blob-small', {
@@ -97,4 +102,4 @@ gsap.to(document.getElementById('blob-large'), {
 //remove cookie bar
 document.getElementById("btn-accept-cookies").addEventListener("click", () => {
   document.getElementById("cookies-bar").style.display= "none";
-})
+});
